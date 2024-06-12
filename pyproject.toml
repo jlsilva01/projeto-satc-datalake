@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "projeto-satc-datalake"
+version = "0.1.0"
+description = ""
+authors = ["Jorge Luiz da Silva <jlsilva01@yahoo.com.br>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.12,<3.13"
+pandas = "^2.2.2"
+azure-identity = "^1.16.1"
+azure-storage-file-datalake = "^12.15.0"
+python-dotenv = "^1.0.1"
+pyodbc = "^5.1.0"
+mkdocs = "^1.6.0"
+mkdocs-material = "^9.5.26"
+mkdocstrings = "^0.25.1"
+sqlalchemy = "1.4.52"
+apache-airflow = "2.9.1"
+
+
+[tool.poetry.group.dev.dependencies]
+blue = "^0.9.1"
+isort = "^5.13.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
